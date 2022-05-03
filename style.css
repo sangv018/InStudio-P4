@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'mus';
+    src: url(InStudio-P4/fonts/MUSICNET.ttf);
+}
+
+body {
+    background-color: rgb(41, 40, 40);
+}
+
+#heading {
+    font-family: 'mus';
+    color: whitesmoke;
+    font-size: 80px;
+    text-align: center;
+}
+
+#tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white ;
+    perspective: 1000px;
+    transition: transform 1s 6s;
+    transform-style: preserve-3d;
+}
+
