@@ -1,4 +1,4 @@
-const colours = ["#FFFFFF", "#FFCBE1", "#FF8ABB", "#FF62A4", "#FF2F86", "#FF006B"] //list of colours: cycle one by one
+const colours = ["#e7feff", "#ace5ee", "#00bfff", "#4169e1", "#0000cd", "#00008b"] //list of colours: cycle one by one
 const sounds = ["sounds/sound1.m4a", "sounds/sound2.m4a", "sounds/sound3.m4a", "sounds/sound4.m4a", "sounds/sound5.m4a", "sounds/sound6.m4a"] //list of sounds: cycle one by one, replaces sound to next
 
 // function sleep(milliseconds) {
