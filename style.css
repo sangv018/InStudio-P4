@@ -20,7 +20,7 @@ body {
     /* gap: 5px; */
     justify-content: center;
     padding-left: 500px;
-    padding-top: 100px;
+    padding-top: 60px;
     row-gap: 50px;
     column-gap: 10px;
 }
@@ -40,6 +40,25 @@ body {
     font-size: 40px;
     font-family: monospace;
     padding-left: 850px;
-    padding-top: 80px;
+    /* padding-top: -60px; */
+}
+
+#instructions {
+    color: white;
+    font-size: 40px;
+    font-family: monospace;
+    top: 100px;
+    padding-left: 100px;
+    /* padding-top: 30px; */
+}
+
+
+#steps {
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+    top: 100px;
+    padding-left: 100px;
+    /* padding-top: 30px; */
 }
 
