@@ -1,4 +1,13 @@
-const colours = ["#FFFFFF", "#FFCBE1", "#FF8ABB", "#FF62A4", "#FF2F86", "#FF006B"] //list of colours: cycle one by one
+let colours = ["#FFFFFF", "#FFCBE1", "#FF8ABB", "#FF62A4", "#FF2F86", "#FF006B"] //list of colours: cycle one by one
+//const colours = ["#e9ffdb", "#ace5ee", "#00bfff", "#4169e1", "#0000cd", "#00008b"] 
+//const colours = ["#e7feff", "#90ee90", "#77dd77", "#32cd32", "#228b22", "#006400"] 
+//const colours = ["#dcd0ff", "#d8bfd8", "#c9a0dc", "#9370db", "#9932cc", "#663399"] 
+
+// const colorPalette2Button = document.querySelector("button#color-palette-2")
+// colorPalette2Button.addEventListener('click', () => {
+//     colours = ["#e9ffdb", "#ace5ee", "#00bfff", "#4169e1", "#0000cd", "#00008b"]
+// }) adding more shades of colours, creating sets
+
 const sounds = ["sounds/sound1.m4a", "sounds/sound2.m4a", "sounds/sound3.m4a", "sounds/sound4.m4a", "sounds/sound5.m4a", "sounds/sound6.m4a"] //list of sounds: cycle one by one, replaces sound to next
 
 // function sleep(milliseconds) {
@@ -12,13 +21,23 @@ const sounds = ["sounds/sound1.m4a", "sounds/sound2.m4a", "sounds/sound3.m4a", "
 function playall() {
     console.log("clicked")
     var audio = document.querySelectorAll("audio");
-    for(var i=0; i < audio.length; i++) {
-        // window.setTimeout(function () {
-            audio[i].play();
-            console.log("playing" + audio[i])
-            //will play all sounds together
-        // }, 6000);
-    }
+    let currentSound = 0;
+    audio[currentSound].play();
+    currentSound = currentSound + 1; 
+    window.setInterval(function () {
+        audio[currentSound].play();
+        currentSound = currentSound + 1; 
+        console.log("playing" + audio[currentSound])
+        // will play all sounds together
+    }, 6000);
+
+    // for(var i=0; i < audio.length; i++) {
+    //     window.setTimeout(function () {
+    //         audio[i].play();
+    //         console.log("playing" + audio[i])
+    //         // will play all sounds together
+    //     }, 6000);
+    // }
 
     // console.log(audio);
     // audio.forEach(element => {
@@ -26,7 +45,6 @@ function playall() {
     // element.play();
     // });
 }
-
 
 var count = 0 //number you are on 
 var degrees = 0 // rotation value
