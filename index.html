@@ -13,9 +13,27 @@
             COLOURFUL MUSICAL TILES
         </div>
 
+
+        <div id="title">
+            PICK A COLOUR
+        </div>
+
+        <div class="shade-picker">
+            <br>
+            <br>
+            <div id="pink" class="shade" onclick="shadepink();"></div>
+            <div id="green" class="shade" onclick="shadegreen();"></div>
+            <div id="blue" class="shade" onclick="shadeblue();"></div>
+            <div id="purple" class="shade" onclick="shadepurple();"></div>
+        </div>
+
+        <div id="audiopicker">
+
+        </div>
+
         <div id="tiles" class="audio">
             <div id="box1" class="box" onclick="nextsound();">
-                <audio  src="sounds/sound1.m4a" id="sound1"></audio>
+                    <audio src="sounds/sound1.m4a" id="sound1"></audio>
             </div>
             <div id="box2" class="box" onclick="nextsoundBox2();">
                 <audio src="sounds/sound2.m4a" id="sound2"></audio>
@@ -73,9 +91,10 @@
         <div id="instructions">
             INSTRUCTIONS
         </div>
-
+<br>
         <div id="steps">
-            1. Play the sounds <br>
+            1. Flip the tiles to choose <br> a sound <br>
+            2. Press the "PLAY SOUND" <br> button to hear the sound <br> in the order of the tiles <br>
         </div>
 
         <div id="play" onclick="playall();">
